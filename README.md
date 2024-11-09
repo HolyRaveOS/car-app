@@ -2,7 +2,7 @@
 
 A modern web application built with Next.js that allows users to explore and filter vehicles by make and year. This application utilizes the NHTSA (National Highway Traffic Safety Administration) Vehicle API to provide comprehensive vehicle information.
 
-[Live Demo](https://cars-dealer-app.vercel.app/)
+[Live Demo](https://car-app-two-alpha.vercel.app/)
 
 ## 🚀 Features
 
@@ -21,20 +21,18 @@ A modern web application built with Next.js that allows users to explore and fil
 │   ├── _components/
 │   │   ├── ui/         # Shadcn UI components
 │   │   │   ├── button.tsx
-│   │   │   ├── combobox.tsx
-│   │   │   ├── command.tsx
-│   │   │   ├── dialog.tsx
-│   │   │   ├── popover.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── select.tsx
 │   │   │   └── skeleton.tsx
 │   │   └── vehicles/   # Vehicle-specific components
 │   │       ├── Vehicle.tsx
+|   |       ├── VehiclesData.tsx
 │   │       └── VehiclesList.tsx
 │   ├── _lib/
 │   │   ├── fetchClient.ts     # Custom API client
 │   │   ├── services/
 │   │   │   └── data-service.ts   # API service functions
-│   │   └── utils/
-│   │       └── index.ts       # Helper functions
+│   │   └── utils.ts      # Helper functions
 │   ├── _types/
 │   │   ├── Vehicle.ts
 │   │   └── VehicleParams.ts
@@ -43,16 +41,14 @@ A modern web application built with Next.js that allows users to explore and fil
 │   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.tsx
-│   ├── not-found.tsx
+│   ├── error.tsx
 │   ├── page.tsx
-│   └── vehicles/
+│   └── result/
 │       └── [makeId]/
 │           └── [year]/
 │               └── page.tsx
-├── public/
-│   └── images/
-├── .env.example
 ├── .eslintrc.json
+├── .env.local
 ├── .gitignore
 ├── next-env.d.ts
 ├── next.config.js
@@ -76,7 +72,7 @@ A modern web application built with Next.js that allows users to explore and fil
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/HolyRaveOS/Car-Dealer-App.git
+git clone https://github.com/HolyRaveOS/car-app.git
 ```
 
 2. Install dependencies:
