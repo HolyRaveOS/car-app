@@ -15,8 +15,6 @@ interface Props {
 const Vehicle: React.FC<Props> = ({ vehicle }) => {
   const { Make_ID, Make_Name, Model_Name } = vehicle;
 
-  console.log(vehicle);
-
   return (
     <li className="basis-[calc(25%-20px)] grow min-w-[290px]">
       <Card>
