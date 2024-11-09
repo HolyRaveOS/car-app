@@ -103,8 +103,8 @@ The application integrates with the NHTSA Vehicle API to fetch:
 
 Example API endpoints:
 
-- `/vehicles/GetMakesForVehicleType/car`
-- `/vehicles/GetModelsForMakeIdYear/makeId/{makeId}/modelyear/{year}`
+- `/vehicles/GetMakesForVehicleType/car?format=json`
+- `/vehicles/GetModelsForMakeIdYear/makeId/{makeId}/modelyear/{year}?format=json`
 
 ## 🧩 Key Components
 
@@ -129,7 +129,7 @@ Example API endpoints:
 ## 🔄 Data Flow
 
 1. User selects vehicle make and year on home page
-2. Application routes to `/vehicles/[makeId]/[year]`
+2. Application routes to `/result/[makeId]/[year]`
 3. Server-side data fetching occurs
 4. Vehicle list is rendered with loading states
 5. Error boundaries catch and handle any API errors
